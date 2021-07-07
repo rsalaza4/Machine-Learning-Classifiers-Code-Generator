@@ -27,10 +27,10 @@ st.sidebar.subheader("Input Data File Path")
 path = st.sidebar.text_input("Enter the input data file path here:", "Desktop/")
 
 # Machine Learning Algorithm
-st.sidebar.subheader("Machine Learning Algorithm")
-algorithm = st.sidebar.selectbox("Select a machine learning algorithm:", ["Balanced Random Forest Classifier", "Decision Tree", "Easy Ensemble Classifier", "Gaussian Naive Bayes","Gradient Boosting Classifier", "K-Nearest Neighbors","Logistic Regression", "Random Forest",  "Stochastic Gradient Descent", "Support Vector Classifier"])
+st.sidebar.subheader("Classifier Algorithm")
+algorithm = st.sidebar.selectbox("Select a machine learning algorithm:", ["Balanced Random Forest", "Decision Tree", "Easy Ensemble", "Gaussian Naive Bayes","Gradient Boosting", "K-Nearest Neighbors", "Logistic Regression", "Random Forest",  "Stochastic Gradient Descent", "Support Vector"])
 
-if algorithm == "Balanced Random Forest Classifier":
+if algorithm == "Balanced Random Forest":
 	algorithm_import = "from imblearn.ensemble import BalancedRandomForestClassifier"
 	algorithm_instance = "brfc"
 	algorithm_class = "BalancedRandomForestClassifier()"
@@ -40,7 +40,7 @@ elif algorithm == "Decision Tree":
 	algorithm_instance = "dt"
 	algorithm_class = "tree.DecisionTreeClassifier()"
 
-elif algorithm == "Easy Ensemble Classifier":
+elif algorithm == "Easy Ensemble":
 	algorithm_import = "from imblearn.ensemble import EasyEnsembleClassifier"
 	algorithm_instance = "eec"
 	algorithm_class = "EasyEnsembleClassifier()"
@@ -50,7 +50,7 @@ elif algorithm == "Gaussian Naive Bayes":
 	algorithm_instance = "gnb"
 	algorithm_class = "GaussianNB()"
 
-elif algorithm == "Gradient Boosting Classifier":
+elif algorithm == "Gradient Boosting":
 	algorithm_import = "from sklearn.ensemble import GradientBoostingClassifier"
 	algorithm_instance = "gbc"
 	algorithm_class = "GradientBoostingClassifier()"
@@ -70,7 +70,7 @@ elif algorithm == "Random Forest":
 	algorithm_instance = "rfc"
 	algorithm_class = "RandomForestClassifier()"
 
-elif algorithm == "Support Vector Classifier":
+elif algorithm == "Support Vector":
 	algorithm_import = "from sklearn.svm import SVC"
 	algorithm_instance = "svm"
 	algorithm_class = "SVC()"
