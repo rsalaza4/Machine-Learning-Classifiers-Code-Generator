@@ -6,7 +6,7 @@ import base64
 from PIL import Image
 
 # Set a title
-st.title("Machine Learning Code Generator")
+st.title("Machine Learning Classifiers Code Generator")
 
 # Python iogo image
 python_logo = Image.open("python.png")
