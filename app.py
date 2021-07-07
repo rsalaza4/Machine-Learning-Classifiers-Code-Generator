@@ -26,6 +26,10 @@ else:
 st.sidebar.subheader("Input Data File Path")
 path = st.sidebar.text_input("Enter the input data file path here:", "Desktop/")
 
+# Train/Test Split Ratio
+st.sidebar.subheader("Train/Test Split Ratio")
+train_test_ratio = st.sidebar.number_input("Enter the percentage of the training set:", 0, max_value = 99, value = 70)
+
 # Machine Learning Algorithm
 st.sidebar.subheader("Classifier Algorithm")
 algorithm = st.sidebar.selectbox("Select a machine learning algorithm:", ["Balanced Random Forest", "Decision Tree", "Easy Ensemble", "Gaussian Naive Bayes","Gradient Boosting", "K-Nearest Neighbors", "Logistic Regression", "Random Forest",  "Stochastic Gradient Descent", "Support Vector"])
@@ -79,11 +83,6 @@ elif algorithm == "Stochastic Gradient Descent":
 	algorithm_import = "from sklearn.linear_model import SGDClassifier"
 	algorithm_instance = "sgdc"
 	algorithm_class = "SGDClassifier()"
-
-# Train/Test Split Ratio
-
-st.sidebar.subheader("Train/Test Split Ratio")
-train_test_ratio = st.sidebar.number_input("Enter the percentage of the training set:", 0, max_value = 99, value = 70)
 
 # Scaling Technique
 
