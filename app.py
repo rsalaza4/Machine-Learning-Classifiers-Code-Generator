@@ -29,7 +29,7 @@ path = st.sidebar.text_input("Enter the input data file path here:", "Desktop/")
 # Machine Learning Algorithm
 
 st.sidebar.subheader("Classifier Algorithm")
-algorithm = st.sidebar.selectbox("Select a machine learning algorithm:", ["Balanced Random Forest", "Decision Tree", "Easy Ensemble", "Gaussian Naive Bayes","Gradient Boosting", "K-Nearest Neighbors", "Logistic Regression", "Random Forest",  "Stochastic Gradient Descent", "Support Vector"])
+algorithm = st.sidebar.selectbox("Select a machine learning algorithm:", ["Balanced Random Forest", "Decision Tree", "Easy Ensemble", "Gaussian Naïve Bayes","Gradient Boosting", "K-Nearest Neighbors", "Logistic Regression", "Random Forest",  "Stochastic Gradient Descent", "Support Vector"])
 
 if algorithm == "Balanced Random Forest":
 	algorithm_import = "from imblearn.ensemble import BalancedRandomForestClassifier"
@@ -46,7 +46,7 @@ elif algorithm == "Easy Ensemble":
 	algorithm_instance = "eec"
 	algorithm_class = "EasyEnsembleClassifier()"
 
-elif algorithm == "Gaussian Naive Bayes":
+elif algorithm == "Gaussian Naïve Bayes":
 	algorithm_import = "from sklearn.naive_bayes import GaussianNB"
 	algorithm_instance = "gnb"
 	algorithm_class = "GaussianNB()"
