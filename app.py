@@ -1,33 +1,32 @@
+# Import libraries and dependencies
 import streamlit as st
 import numpy as np
 import pandas as pd
-
 import base64
 from PIL import Image
 
+# Set a title
 st.title("Machine Learning Code Generator")
 
+# Python iogo image
+python_logo = Image.open("python.png")
+st.write("")
+st.image(python_logo, width=600)
+
+# Data Source
 st.sidebar.subheader("Data Source")
 data_source = st.sidebar.selectbox("Select the data source file extension:", [".csv file", ".xlsx file"])
-
-profile_picture = Image.open("python.png")
-st.write("")
-st.image(profile_picture, width=600)
-
-########################################################################################################################
 
 if data_source == ".csv file":
 	data_source = "csv"
 else:
 	data_source = "xlsx"
 
-########################################################################################################################
-
-st.sidebar.subheader("Input Data File")
+# Data File Path
+st.sidebar.subheader("Input Data File Path")
 path = st.sidebar.text_input("Enter the input data file path here:", "Desktop/")
 
-########################################################################################################################
-
+# Machine Learning Algorithm
 st.sidebar.subheader("Machine Learning Algorithm")
 algorithm = st.sidebar.selectbox("Select a machine learning algorithm:", ["Balanced Random Forest Classifier", "Decision Tree", "Easy Ensemble Classifier", "Gaussian Naive Bayes","Gradient Boosting Classifier", "K-Nearest Neighbors","Logistic Regression", "Random Forest",  "Stochastic Gradient Descent", "Support Vector Classifier"])
 
@@ -81,12 +80,12 @@ elif algorithm == "Stochastic Gradient Descent":
 	algorithm_instance = "sgdc"
 	algorithm_class = "SGDClassifier()"
 
-########################################################################################################################
+# Train/Test Split Ratio
 
 st.sidebar.subheader("Train/Test Split Ratio")
 train_test_ratio = st.sidebar.number_input("Enter the percentage of the training set:", 0, max_value = 99, value = 70)
 
-########################################################################################################################
+# Scaling Technique
 
 st.sidebar.subheader("Scaling Technique")
 scaling = st.sidebar.selectbox("Select a machine learning algorithm:",["Max Abs Scaler", "Min Max Scaler", "min max scale", "Normalizer", "Power Transformer", "Quantile Transformer", "Robust Scaler", "Standard Scaler"])
@@ -123,7 +122,7 @@ elif scaling == "Power Transformer":
 	scaling_technique_import = "from sklearn.preprocessing import PowerTransformer"
 	scaling_class = "PowerTransformer()"
 
-########################################################################################################################
+# Resampling Technique
 
 st.sidebar.subheader("Resampling Technique")
 
@@ -223,9 +222,7 @@ else:
 		resampling_instance = "smotetomek"
 		resampling_class = "SMOTETomek()"
 
-########################################################################################################################
-
-
+# Set instuctions
 st.subheader("Instructions:")
 
 st.write("1. Specify the variables on the side bar (*click on > if closed*)")
@@ -233,6 +230,7 @@ st.write("2. Copy the generated Python script to your clipboard")
 st.write("3. Paste the generated Python script on your IDE of preference")
 st.write("4. Run the Python script")
 
+# Display generated Python code
 st.subheader("Python Code:")
 
 st.code(
