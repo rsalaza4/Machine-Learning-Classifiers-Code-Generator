@@ -333,6 +333,6 @@ st.write("")
 st.image(profile_picture, width=250)
 
 st.markdown("### Roberto Salazar")
-st.markdown("Roberto Salazar is an Industrial and Systems engineer with a passion for coding. He obtained his bachelor's degree from Universidad de Monterrey (UDEM) and his master's degree from Binghamton University, State University of New York. His research interests include data analytics, machine learning, lean six sigma, continuous improvement and simulation.")
+st.markdown("Roberto Salazar is an Industrial and Systems engineer with a passion for coding. He obtained his bachelor's degree from University of Monterrey and his master's degree from Binghamton University, State University of New York. His research interests include data analytics, machine learning, lean six sigma, continuous improvement and simulation.")
 
 st.markdown(":envelope: [Email](mailto:rsalaza4@binghamton.edu) | :bust_in_silhouette: [LinkedIn](https://www.linkedin.com/in/roberto-salazar-reyna/) | :computer: [GitHub](https://github.com/rsalaza4) | :page_facing_up: [Programming Articles](https://robertosalazarr.medium.com/) | :coffee: [Buy Me a Coffe](https://www.buymeacoffee.com/robertosalazarr) ")
