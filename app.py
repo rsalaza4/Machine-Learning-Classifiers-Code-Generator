@@ -20,7 +20,7 @@ data_source = st.sidebar.selectbox("Select the data source file extension:", [".
 if data_source == ".csv file":
 	data_source = "csv"
 else:
-	data_source = "xlsx"
+	data_source = "excel"
 
 # Data File Path
 st.sidebar.subheader("Input Data File Path")
