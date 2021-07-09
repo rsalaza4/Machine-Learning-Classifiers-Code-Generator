@@ -246,7 +246,7 @@ st.code(
 	"df = pd.read_" + data_source + "('" + path + "')" +"\n\n"+
 
 	"# Visualize data set" +"\n"+
-	"df.head()" +"\n\n"+ 
+	"display(df.head())" +"\n\n"+ 
 
 	"# ------------------------------- Data Cleaning --------------------------------" +"\n\n"+
 
@@ -312,7 +312,7 @@ st.code(
 
 	"# Calculate balanced accuracy scrore" +"\n"+ 
 	"from sklearn.metrics import balanced_accuracy_score" +"\n"+
-	"balanced_accuracy_score(y_test, y_pred)" +"\n\n"+
+	"print(balanced_accuracy_score(y_test, y_pred))" +"\n\n"+
 
 	"# Display the confusion matrix" +"\n"+
 	"from sklearn.metrics import confusion_matrix" +"\n"+
