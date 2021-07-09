@@ -316,7 +316,7 @@ st.code(
 
 	"# Display the confusion matrix" +"\n"+
 	"from sklearn.metrics import confusion_matrix" +"\n"+
-	"print(confusion_matrix(y_test, y_pred)" +"\n\n"+
+	"print(confusion_matrix(y_test, y_pred))" +"\n\n"+
 
 	"# Display the imbalanced classification report" +"\n"+
 	"from imblearn.metrics import classification_report_imbalanced" +"\n"+
