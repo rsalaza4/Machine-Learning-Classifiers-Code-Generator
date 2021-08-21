@@ -268,7 +268,7 @@ st.code(
 	"from sklearn.model_selection import train_test_split" +"\n\n"+ 
 
 	"# Divide data set into traning and testing subsets" +"\n"+ 
-	"X_train, X_test, y_train, y_test = train_test_split(X, y, train_size = " + str(round(train_test_ratio,2)) + ")" +"\n\n"+
+	"X_train, X_test, y_train, y_test = train_test_split(X, y, train_size = " + str(round(train_test_ratio/100,2)) + ")" +"\n\n"+
 
 	"# Import data scaling technique class" +"\n"+ 
 	scaling_technique_import +"\n\n"+
