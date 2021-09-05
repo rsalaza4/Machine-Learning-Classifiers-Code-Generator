@@ -8,7 +8,7 @@ from PIL import Image
 # Set a title
 st.title("Machine Learning Classifiers Code Generator")
 
-# Python iogo image
+# Python logo image
 python_logo = Image.open("python.png")
 st.write("")
 st.image(python_logo, width=600)
