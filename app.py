@@ -29,9 +29,14 @@ path = st.sidebar.text_input("Enter the input data file path here:", "Desktop/")
 # Machine Learning Algorithm
 
 st.sidebar.subheader("Classifier Algorithm")
-algorithm = st.sidebar.selectbox("Select a machine learning algorithm:", ["Balanced Random Forest", "Decision Tree", "Easy Ensemble", "Gaussian Naïve Bayes","Gradient Boosting", "K-Nearest Neighbors", "Logistic Regression", "Random Forest",  "Stochastic Gradient Descent", "Support Vector"])
+algorithm = st.sidebar.selectbox("Select a machine learning algorithm:", ["AdaBoost", "Balanced Random Forest", "Decision Tree", "Easy Ensemble", "Gaussian Naïve Bayes","Gradient Boosting", "K-Nearest Neighbors", "Logistic Regression", "Random Forest",  "Stochastic Gradient Descent", "Support Vector"])
 
-if algorithm == "Balanced Random Forest":
+if algorithm == "AdaBoost":
+	algorithm_import = "from sklearn.ensemble import AdaBoostClassifier"
+	algorithm_instance = "abc"
+	algorithm_class = "AdaBoostClassifier()"
+
+elif algorithm == "Balanced Random Forest":
 	algorithm_import = "from imblearn.ensemble import BalancedRandomForestClassifier"
 	algorithm_instance = "brfc"
 	algorithm_class = "BalancedRandomForestClassifier()"
