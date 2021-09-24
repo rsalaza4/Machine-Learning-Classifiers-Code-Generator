@@ -304,7 +304,7 @@ st.code(
 	"# Import machine learning model class" +"\n"+ 
 	algorithm_import +"\n\n"+ 
 
-	"# Instatiate machine learning model" +"\n"+ 
+	"# Instantiate machine learning model" +"\n"+ 
 	algorithm_instance + " = " + algorithm_class +"\n\n"+
 
 	"# Fit the machine learning model with the training data" +"\n"+
