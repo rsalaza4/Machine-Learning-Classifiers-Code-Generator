@@ -293,7 +293,7 @@ st.code(
 	"# Import data resampling class" +"\n"+ 
 	resampling_import +"\n\n"+
 
-	"# Instatiate data resampler technique" +"\n"+ 
+	"# Instantiate data resampler technique" +"\n"+ 
 	resampling_instance + " = " + resampling_class +"\n\n"+
 
 	"# Resample training sets" +"\n"+ 
