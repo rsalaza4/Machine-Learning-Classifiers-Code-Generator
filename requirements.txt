@@ -1,4 +1,4 @@
 numpy==1.19.2
 pandas==1.2.1
-streamlit==0.75.0
+streamlit==1.8.1
 Pillow==8.3.1
